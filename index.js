@@ -1,4 +1,4 @@
-var crypto = require('crypto');
+var createHmac = require('create-hmac');
 
 /**
  * @param {[type]} securityKey
@@ -256,8 +256,7 @@ Thumbor.prototype = {
 
     if (this.THUMBOR_SECURITY_KEY) {
 
-      var key = crypto
-        .createHmac('sha1', this.THUMBOR_SECURITY_KEY)
+      var key = createHmac('sha1', this.THUMBOR_SECURITY_KEY)
         .update(operation + this.imagePath)
         .digest('base64');
 
