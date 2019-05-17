@@ -1,26 +1,22 @@
-# ThumborUrlBuilder
+# Thumbor-Lite
 
-Thumbor client for Node JS
+Thumbor client for Node JS or browser (not recommended).
 
-Combination of
-- https://github.com/dcaramelo/ThumborUrlBuilder crypt implementation
-- https://github.com/rafaelcaricio/ThumborJS build command set
-
-Neither of these repos are updating anymore so we are maintaining our own
+Forked from [thumbor](https://www.npmjs.com/package/thumbor), but does not rely on node.js builtins.
 
 ## Usage
 
 ```sh
 # Install thumbor module
 
-npm install thumbor
+npm install thumbor-lite
 ```
 
 ```javascript
 // Declare thumbor-url-builder in JS
 // Your encryption key is not required, but your link will be unsafe.
 
-var Thumbor = require('thumbor');
+var Thumbor = require('thumbor-lite');
 var thumbor  = new Thumbor('MY_KEY', 'http://myserver.thumbor.com');
 
 // Generate your url :
