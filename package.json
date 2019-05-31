@@ -4,7 +4,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/robbtraister/thumbor.git"
+    "url": "https://github.com/WPMedia/thumbor-lite.git"
   },
   "author": {
     "name": "PolicyMic",
@@ -12,8 +12,5 @@
   },
   "readme": "Client Thumbor for Node JS",
   "readmeFilename": "README.md",
-  "license": "MIT",
-  "dependencies": {
-    "create-hmac": "^1.1.7"
-  }
+  "license": "MIT"
 }
