@@ -1,16 +1,29 @@
 {
   "name": "thumbor-lite",
   "version": "0.1.6",
-  "main": "index.js",
+  "browser": "src/browser.js",
+  "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/WPMedia/thumbor-lite.git"
+    "url": "https://github.com/robbtraister/thumbor.git"
   },
   "author": {
     "name": "PolicyMic",
     "url": "http://policymic.com"
   },
-  "readme": "Client Thumbor for Node JS",
+  "readme": "Client Thumbor for browser",
   "readmeFilename": "README.md",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "cipher-base": "^1.0.4",
+    "inherits": "^2.0.4",
+    "safe-buffer": "^5.2.0",
+    "sha.js": "^2.4.11"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.2"
+  },
+  "scripts": {
+    "test": "mocha ./test"
+  }
 }

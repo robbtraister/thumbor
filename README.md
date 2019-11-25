@@ -16,10 +16,10 @@ npm install thumbor-lite
 // Declare thumbor-url-builder in JS
 // Your encryption key is not required, but your link will be unsafe.
 
-var Thumbor = require('thumbor-lite');
-var thumbor  = new Thumbor('MY_KEY', 'http://myserver.thumbor.com');
+const Thumbor = require('thumbor-lite');
+const thumbor = new Thumbor('MY_KEY', 'http://myserver.thumbor.com');
 
 // Generate your url :
 
-var thumborUrl = thumbor.setImagePath('00223lsvrnzeaf42.png').resize(50,50).buildUrl();
+let thumborUrl = thumbor.setImagePath('00223lsvrnzeaf42.png').resize(50,50).buildUrl();
 ```
