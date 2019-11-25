@@ -1,6 +1,6 @@
 {
   "name": "thumbor-lite",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "browser": "src/browser.js",
   "main": "src/index.js",
   "repository": {
