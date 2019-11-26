@@ -21,9 +21,13 @@
     "sha.js": "^2.4.11"
   },
   "devDependencies": {
-    "mocha": "^6.2.2"
+    "mocha": "^6.2.2",
+    "thumbor": "^0.1.5",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
   },
   "scripts": {
+    "build": "webpack",
     "test": "mocha ./test"
   }
 }
