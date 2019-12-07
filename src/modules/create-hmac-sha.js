@@ -1,9 +1,14 @@
+/**
+ * this module is sampled from https://www.npmjs.com/package/create-hmac,
+ * but reduced to the minimal implementation necessary for this package
+ */
+
 'use strict'
 var inherits = require('inherits')
 var Base = require('cipher-base')
 var Buffer = require('safe-buffer').Buffer
 
-var sha = require('sha.js')
+var sha = require('./sha.js/index.js')
 
 var ZEROS = Buffer.alloc(128)
 
