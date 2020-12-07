@@ -1,7 +1,7 @@
 module.exports = function createThumbor (createHmac) {
   /**
-   * @param {[type]} securityKey
-   * @param {[type]} thumborServerUrl
+   * @param {String} securityKey
+   * @param {String} thumborServerUrl
    */
   function Thumbor(securityKey, thumborServerUrl) {
     'use strict';
@@ -138,8 +138,8 @@ module.exports = function createThumbor (createHmac) {
      *
      * Use a value of 'orig' to use an original image dimension. E.g. for a 640
      * x 480 image, `.resize(320, 'orig')` yields a 320 x 480 thumbnail.
-     * @param  {String} width
-     * @param  {String} height
+     * @param  {String|Number} width
+     * @param  {String|Number} height
      */
     resize: function(width, height) {
       this.width = width;
